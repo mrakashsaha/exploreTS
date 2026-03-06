@@ -18,4 +18,8 @@ let friends = ["Akash", "Tamal", "Mustak", "Hridoy"];
 friends.push("Tanvir");
 console.log(friends);
 let elegibleRollList = [15, 56, 46];
+// Tuple
+let coordinates = [1, 3, true];
+let studentInfo = ["akash", 45];
+studentInfo[0] = "Akash Kumar Saha";
 //# sourceMappingURL=basicDataType.js.map
