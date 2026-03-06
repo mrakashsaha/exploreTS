@@ -7,5 +7,5 @@ const user = {
     lastName: "Saha",
     ifMarried: false,
 };
-console.log(user.firstName);
+// user.firstName =  not possible to assign value as it is readonly access modifier
 //# sourceMappingURL=objectType.js.map
