@@ -30,4 +30,24 @@ const greetFriends2 = (...friends) => {
 };
 greetFriends2("Akash", "Tushar", "Sajib");
 //destructurting
+// Object destructring
+const user = {
+    id: 345,
+    name: {
+        firstName: "Akash",
+        middleName: "Kumar",
+        lastName: "Saha"
+    },
+    contactNo: "01758290000",
+    address: "North Badda, Dhaka",
+};
+const { contactNo } = user;
+const { name: { middleName: midName } } = user; // with name alias middlename as midName,
+// const {name: {middleName}} = user;  // no name alias it will be consider as middleName as it is.
+console.log(midName);
+// array destructring
+const myFriends = ["Mustak", "Shovon", "Rajon", "Mithun", "Monica"];
+const [a, b, bestFriend] = myFriends;
+const [, , bestFriend2, ...rest] = myFriends;
+console.log(rest, bestFriend);
 //# sourceMappingURL=operator.js.map
