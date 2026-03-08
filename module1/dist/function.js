@@ -18,4 +18,6 @@ const poorUser = {
     }
 };
 console.log(poorUser.addBalance(56));
+const arr = [12, 213, 12, 11, 12];
+const newArray = arr.map((i) => i * i);
 //# sourceMappingURL=function.js.map
