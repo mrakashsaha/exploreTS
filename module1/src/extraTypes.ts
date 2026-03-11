@@ -1,0 +1,57 @@
+// Nullable type
+
+// If a variable hold null value then it is called as nullable type
+
+
+const searchName = (value: string | null): void => {
+    if (value) {
+        console.log("Searching...")
+    }
+    else {
+        console.log("There is noting to search")
+    }
+}
+
+
+searchName(null);
+
+
+// Unknown type
+
+// Meaning now I don't guess the type of the variable but run time I will know this
+
+
+const getSpeedInMeterPerSecond = (value: unknown) => {
+    if (typeof value === "number") {
+        const convertedSpeed = (value * 1000) / 3600;
+        console.log(`The speed is ${convertedSpeed} ms^-1`)
+    }
+
+    else if (typeof value === "string") {
+
+        console.log(`The speed is will be calculated in next step`)
+    }
+
+    else {
+        console.log("invalid input")
+    }
+}
+
+getSpeedInMeterPerSecond("1000 kmh^-1")
+getSpeedInMeterPerSecond(null);
+
+
+// If we surly know that a function won't finish then we type will be never
+
+// | Type    | Meaning                               |
+// | ------- | ------------------------------------- |
+// | `void`  | Function finishes but returns nothing |
+// | `never` | Function **never finishes**           |
+
+
+function throwError (msg: string) : never {
+    throw new Error (msg)
+}
+
+
+throwError("This is my error")
