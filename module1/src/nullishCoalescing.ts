@@ -29,3 +29,38 @@ const result1= isAuthenticated ?? "Guest" // working for null or undefined value
 const result2= isAuthenticated ? isAuthenticated : "Guest"
 
 console.log({result1, result2})
+
+
+type User = {
+    name: string;
+    address: {
+        presentAddress: {
+            road: string;
+            city: string;
+            district: string;
+        }
+        permanantAddress?: {
+            road: string;
+            city: string;
+            district: string;
+        }
+        
+    }
+}
+
+
+const user: User = {
+    name: "Akash Kumar Saha",
+    address: {
+        presentAddress: {
+            road: "Old thana road",
+            city: "NOrth Badda",
+            district: "Dhaka"
+        }
+    }
+}
+
+
+const permanentAddress = user?.address?.permanantAddress ?? "No Permanent Adress Found";
+
+console.log({permanentAddress})
