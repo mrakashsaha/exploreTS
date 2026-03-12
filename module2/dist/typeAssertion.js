@@ -16,7 +16,13 @@ const kgToGram = (value) => {
         return value * 1000;
     }
 };
+// If we use typer assertion typescript trust you blindly
 const result1 = kgToGram("45");
 const result2 = kgToGram(45);
 console.log({ result1, result2 });
+try {
+}
+catch (error) {
+    console.log(error.message);
+}
 //# sourceMappingURL=typeAssertion.js.map
