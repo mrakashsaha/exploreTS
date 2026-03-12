@@ -27,6 +27,11 @@ const getSpeedInMeterPerSecond = (value) => {
 };
 getSpeedInMeterPerSecond("1000 kmh^-1");
 getSpeedInMeterPerSecond(null);
+// If we surly know that a function won't finish then we type will be never
+// | Type    | Meaning                               |
+// | ------- | ------------------------------------- |
+// | `void`  | Function finishes but returns nothing |
+// | `never` | Function **never finishes**           |
 function throwError(msg) {
     throw new Error(msg);
 }
