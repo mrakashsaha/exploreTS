@@ -12,6 +12,7 @@ class Animal {
     //     this.species =species;
     //     this.sound = sound;
     // }
+    // by using paramerter proparety automatically done by typescript
     constructor(name, species, sound) {
         this.name = name;
         this.species = species;
