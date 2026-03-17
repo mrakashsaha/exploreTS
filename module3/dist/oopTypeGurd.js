@@ -47,6 +47,7 @@ getAnimal(dog1);
 const isDog = (animal) => {
     return animal instanceof Dog;
 };
+// a kind of boolean whic are telling this is true and cat
 const isCat = (animal) => {
     return animal instanceof Cat;
 };
