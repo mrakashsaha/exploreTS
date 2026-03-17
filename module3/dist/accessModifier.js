@@ -4,20 +4,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 class BackAccount {
     id;
     name;
-    balance;
+    _balance; // convention if we use private property then variable name should start with _
     constructor(id, name, balance) {
         this.id = id;
         this.name = name;
-        this.balance = balance;
+        this._balance = balance;
     }
     addMoney(amount) {
-        this.balance = this.balance + amount;
+        this._balance = this._balance + amount;
     }
     withdrawMoney(amount) {
-        this.balance = this.balance - amount;
+        this._balance = this._balance - amount;
     }
     getBalance() {
-        return this.balance;
+        return this._balance;
     }
 }
 const accountHolder1 = new BackAccount(1, "Akash", 5);
