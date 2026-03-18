@@ -14,7 +14,7 @@ class Counter {
     increment () {
         return (Counter.count = Counter.count+1);
     }
-    decrement () {
+    static decrement () {
         return (Counter.count = Counter.count-1);
     }
 }
@@ -30,4 +30,10 @@ console.log(c1.increment());// different memory
 
 
 console.log(c2.increment());// different memory
+
+
+console.log(Counter.decrement());// different memory
+
+
+
 
